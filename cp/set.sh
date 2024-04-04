@@ -48,6 +48,7 @@ copy_file() {
 source_dir="./"
 
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+  sudo mkdir /usr/include/c++/11/bits
   dest_dir="/usr/include/c++/11"
 elif [[ "$OSTYPE" == "darwin"* ]]; then
   sudo mkdir /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/bits
