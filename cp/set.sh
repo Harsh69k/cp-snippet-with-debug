@@ -51,8 +51,8 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
   sudo mkdir /usr/include/c++/11/bits
   dest_dir="/usr/include/c++/11"
 elif [[ "$OSTYPE" == "darwin"* ]]; then
-  sudo mkdir /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/bits
-  dest_dir="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/bits/"
+  sudo mkdir /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/bits
+  dest_dir=  "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1bits/"
 
 
 else
